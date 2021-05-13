@@ -14,6 +14,8 @@ def equal():
     input_text.set(eval(input_text.get()))
 def clear():
     input_text.set('')
+    global expression
+    expression=''
 def delete():
     global input_text
     input_text.set(input_text.get()[0:len(input_text.get()) -1])
